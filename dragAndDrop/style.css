@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* Default: Side-by-side on desktops */
+}
+
+#left, #right {
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: 2px dashed white;
+    padding: 10px;
+    background: white;
+}
+
+.list {
+    background: pink;
+    height: 60px;
+    margin: 10px 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks boxes on top of each other */
+    }
+    
+    #left, #right {
+        width: 90%; /* Make the boxes full width on smaller screens */
+        min-height: 200px;
+        margin: 10px 0;
+    }
+
+    .list {
+        height: 50px;
+        margin: 5px 0;
+        font-size: 14px; /* Smaller text for smaller screens */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .list {
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
