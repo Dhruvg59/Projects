@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red,#yellow,#green{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: grey;
+            margin: 10px;
+            
+            justify-content: space-around;
+            gap: 10px;
+        }
+        .lights{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button id="btn" ondblclick="ondoubleclick()" onclick="changecolor()">Change colors </button> -->
+
+    <h1>Traffic lights </h1>
+    <div class="lights">
+
+
+    <div id="red" class=""></div>
+    <div id="yellow" class=""></div>
+    <div id="green" class=""></div>
+
+
+    </div>
+
+    <button id="btn1" onclick="changecolorred()">red</button>
+    <button id="btn2" onclick="changecoloryellow()">yellow</button>
+    <button id="btn3" onclick="changecolorgreen()">green</button>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
